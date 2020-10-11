@@ -1,0 +1,179 @@
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+
+    font-family: Arial, Helvetica, sans-serif;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+
+.contentdiv{
+
+
+    min-height: 10vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    
+   
+ 
+    
+}
+
+
+section{
+
+    width: 80%;
+    height: 250px;
+    background-color:grey;
+    margin: 20px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    margin-left: 50px;
+    border: solid black 1px;
+    
+    
+     
+    
+    
+}
+
+
+header{
+    text-align: center;
+    padding-top: 60px;
+    font-weight: bolder;
+    font-size: 1.75em;
+}
+
+
+
+section div {
+
+width: 100%;
+height: 30px;
+font-weight: bold;
+text-align: center;
+font-size: 1.25em;
+
+
+
+}
+
+
+
+.chicken-container,.beef-container,.sushi-container{
+
+        width:100%;
+        height: 30px;
+        display: flex;
+        flex-direction:row;
+        flex-wrap: nowrap;
+        justify-content: right;
+
+  
+
+}
+
+
+.chicken, .beef, .sushi{
+   
+    text-align: center;
+    border: solid black 1px;
+    text-align: center;
+    justify-content: center;
+    height: 40px;
+}
+
+
+p{
+
+    padding: 10px;
+}
+
+
+.chicken{
+    background-color: tomato;
+    width: 120px;
+
+}
+
+
+.beef{ 
+    background-color: red;
+    color: white;
+    width: 160px;
+   
+
+}
+
+
+.sushi{
+
+    background-color: sandybrown;
+    width: 120px;
+   
+   
+   
+}
+
+
+@media (min-width:768px) and (max-width:991px){
+    .contentdiv{
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+   section:nth-child(3){
+
+    width:62%;
+    align-self: center;
+    float:right;
+    
+    
+
+    
+}
+
+
+section{
+
+width: 30%;
+margin-left: unset;
+}
+
+
+
+
+}
+
+
+@media (min-width:992px){
+
+
+    .contentdiv{
+
+        display: flex;
+        flex-direction: row;
+       
+    }
+
+    section{
+
+        margin-left: unset;
+
+        }
+
+  
+
+}
